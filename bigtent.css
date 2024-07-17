@@ -48,6 +48,7 @@ table {
 
 :root {
     --bt-font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    --bt-font-root-size: 17px;
 }
 
 /* Grid System */
@@ -60,6 +61,8 @@ table {
     width: 100%;
     margin:0 auto;
 }
+
+.col { width: 100%; }
 
 .col-1,  .col-sm-1  { width: 8.33%;  }
 .col-2,  .col-sm-2  { width: 16.66%; }
@@ -143,7 +146,7 @@ table {
     .col-xxl-12 { width: 100%;   }
 }
 
-[class*="col-"] {
+[class*="col-"], .col {
     float: left;
     padding: 0 1em;
 }
@@ -156,7 +159,41 @@ table {
 
 /* End Grid System */
 
+/* Typography */
+
 html {
     font-family: var(--bt-font-family);
     font-weight: normal;
+    font-size: var(--bt-font-root-size);
 }
+
+body {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 2rem;   }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.4rem; }
+
+p {
+    margin-bottom: 1em;
+}
+p.lede, p.lead {
+    font-size: 1.2rem;
+}
+
+ul, ol {
+    padding-left: 1.2em;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+
+/* End Typography */

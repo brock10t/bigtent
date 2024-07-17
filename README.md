@@ -7,7 +7,7 @@ BigTent CSS is designed to be a small footprint, drop-in CSS framework. It's des
 
 ## Guide
 
-** Grid System **
+**Grid System**
 
     <div class="container">
         <div class="row">
